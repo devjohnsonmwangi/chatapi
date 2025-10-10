@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS", // Keep CommonJS output
+    "outDir": "./dist",
+    "rootDir": "./src",
+    // CHANGE THIS LINE: Explicitly use "Node10" to silence the warning for now
+    "moduleResolution": "Node10", 
+    "strict": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+    // Ensure "ignoreDeprecations" is still removed
+  },
+  "include": [
+    "src/**/*.ts", 
+    "src/validator.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
